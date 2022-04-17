@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>geekster</h1>
+    <script>
+        const userList = [{
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "avtar": "http://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "janet",
+            "last_name": "weaver",
+            "avtar": "http://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "emma",
+            "last_name": "wongr",
+            "avtar": "http://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "eve",
+            "last_name": "holt",
+            "avtar": "http://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "charles",
+            "last_name": "morris",
+            "avtar": "http://reqres.in/img/faces/4-image.jpg"
+        },
+
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "tracey",
+            "last_name": "ramos",
+            "avtar": "http://reqres.in/img/faces/4-image.jpg"
+
+
+        }
+        ]
+        function listofusers(ulist) {
+            const finalarr = []
+            for (let i = 0; i < ulist.length; i++) {
+                if (ulist) {
+                    const obj = {
+                        email: ulist[i].email,
+                        first_name: ulist[i].first_name,
+                        last_name: ulist[i].last_name,
+                        avtar: ulist[i].avtar
+                    }
+                    finalarr.push(obj)
+                } else {
+                    finalarr.push(ulist[i])
+                }
+
+            }
+            console.log(finalarr)
+        }
+        listofusers(userList)
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
